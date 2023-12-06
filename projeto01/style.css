@@ -1,0 +1,67 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+#hero {
+  width: 592px;
+  margin: 0 auto 72px;
+}
+
+#hero img {
+  margin-bottom: 72px;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+span, a {
+  color: #f90;
+}
+
+#footer {
+  margin-bottom: 33px;
+}
+
+p, #footer {
+  color: #7D7987; /* essa cor não se aplicar ao #footer */
+  font-size: 14px;
+  line-height: 28px;
+}
+
+#footer a + a{  /* pega a tag <a> anterior a ele */ 
+  margin-left: 28px;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+#footer #line {
+  width: 568px;
+  border: 1px solid #ECEFF2;
+  margin: 0 auto 8px;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* 
+      positions:
+- o padrão é o static
+- position:fixed
+    - habilita o top, bottom, right e left
+*/

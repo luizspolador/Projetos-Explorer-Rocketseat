@@ -1,0 +1,6 @@
+https://www.figma.com/file/ad8A2SHqAp1YzHeoDvyKFu/Explorer---Projeto-01-(Copy)?type=design&node-id=1-2&mode=design&t=2tHPezCzFDglGv8H-0
+
+
+IMAGENS:
+se não precisa de fundo transparente -> usar JPG
+se precisar de fundo transparente -> PNG
