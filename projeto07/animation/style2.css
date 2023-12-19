@@ -1,0 +1,47 @@
+body {
+  background-color: mediumpurple;
+}
+
+.square {
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  opacity: .6;
+}
+
+.square {
+  animation-name: move, blink;
+  animation-duration: 1s, 200ms;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  /* animation-delay: 2s; */
+  animation-timing-function: steps(10);
+
+  /* animation: move 1s forwards alternate infinite, blink 100ms infinite; */
+}
+
+.square:hover {
+  animation-play-state: paused;
+}
+
+/* qudrado ir de um lado para o outro na página*/
+@keyframes move { 
+  /* to */
+  100% { /* se eu deixar 50% -> vai e volta */
+      transform: translateX(calc(100vw - 100% -16px)); /* se move no eixo x.
+      100vh -> pega toda a tela
+      100% -> tamanho da figura (não ultrapassa a tela)
+      16px -> para dar uma distância da margem */
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
